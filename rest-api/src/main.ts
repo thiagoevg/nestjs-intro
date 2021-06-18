@@ -8,7 +8,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   // Set the app to listen the port 9000
-  app.listen(9000);
+  await app.listen(9000);
 }
 
 bootstrap();
